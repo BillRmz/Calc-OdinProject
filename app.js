@@ -42,7 +42,8 @@ const game = function () {
       pcCount++;
       console.log(` You Lost! \n  ${playerSelection} - PC chose ${pcSelection}`);
     }else if (reg === 2){
-        console.log('TIE!')
+        console.log('TIE!');
+        i--;
     }
   }
   let finalScore = `Player ${plCount} vs PC ${pcCount}`;
