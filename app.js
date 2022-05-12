@@ -5,7 +5,7 @@ const computerplay = function () {
   return arr[select];
 };
 
-//This function plays a single round of Rock Paper Scissors.
+
 const playRound = function (pcSelection, plyrSelection) {
   let pcSelect = pcSelection;
   let playerSelect = plyrSelection.toString().toLowerCase();
