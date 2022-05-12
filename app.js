@@ -1,10 +1,9 @@
 //This Function gets the computer's selection
 const computerplay = function () {
   let arr = ["rock", "paper", "scissors"];
-  let select = Math.floor(Math.random() * arr.length); // Operacion que da un numero ramdon
+  let select = Math.floor(Math.random() * arr.length); // gets a ramdon number
   return arr[select];
 };
-
 
 const playRound = function (pcSelection, plyrSelection) {
   let pcSelect = pcSelection;
@@ -24,15 +23,15 @@ const playRound = function (pcSelection, plyrSelection) {
 };
 
 const game = function () {
-//counter for score
-    let pcCount = 0;
+  //counter for score
+  let pcCount = 0;
   let plCount = 0;
-// this loop repeat 5 times, get the user and call the playRound Function.
+  // this loop repeat 5 times, get the user and call the playRound Function.
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt("Please enter 'Rock' 'Paper' or 'Scissors'");
     let pcSelection = computerplay().toString();
-
-    let reg = playRound(playerSelection, pcSelection);
+  
+    let reg = playRound(pcSelection,playerSelection);
     console.log(reg);
 
     if (reg === 1) {
@@ -40,17 +39,16 @@ const game = function () {
       console.log(`You win! \n ${playerSelection}  - PC chose ${pcSelection} `);
     } else if (reg === 0) {
       pcCount++;
-      console.log(` You Lost! \n  ${playerSelection} - PC chose ${pcSelection}`);
-    }else if (reg === 2){
-        console.log('TIE!');
-        i--;
+      console.log( ` You Lost! \n  ${playerSelection} - PC chose ${pcSelection}`);
+    } else if (reg === 2) {
+      console.log("TIE!");
+      i--;
     }
+    console.log(playerSelection);
+    console.log(pcSelection);
   }
   let finalScore = `Player ${plCount} vs PC ${pcCount}`;
-   console.log(finalScore);
+  console.log(finalScore);
+};
 
-}
-
-
-
-game(); 
+game();
