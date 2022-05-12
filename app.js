@@ -24,9 +24,10 @@ const playRound = function (pcSelection, plyrSelection) {
 };
 
 const game = function () {
-  let pcCount = 0;
+//counter for score
+    let pcCount = 0;
   let plCount = 0;
-
+// this loop repeat 5 times, get the user and call the playRound Function.
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt("Please enter 'Rock' 'Paper' or 'Scissors'");
     let pcSelection = computerplay().toString();
@@ -46,7 +47,7 @@ const game = function () {
   }
   let finalScore = `Player ${plCount} vs PC ${pcCount}`;
    console.log(finalScore);
-  return finalScore;
+
 }
 
 
