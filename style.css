@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 3rem;
+  margin: 5rem;
+  border: solid rgb(157, 112, 43) 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: 300px;
+  align-items: center;
+  border-radius: 45px;
+  flex-wrap: nowrap;
+  background-color: antiquewhite;
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 5px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.player div,
+.pc div {
+  border: solid rgb(10, 66, 25) 3px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  width: 8rem;
+}
+.selection {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.selection button {
+  margin-bottom: 5px;
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(34, 164, 51);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.selection button:hover {
+  background-color: white;
+  color: rgb(34, 164, 51);
+  font-weight: bold;
+}
+
+#playerOutput,
+#pcOutput {
+  color: rgb(34, 164, 51);
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#text {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+p, #vs{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 8px;
+    color: rgb(0, 0, 230);
+}
+
+span{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 8px;
+    color: rgb(230, 0, 0); 
+}

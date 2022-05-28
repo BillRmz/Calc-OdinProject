@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    
 </head>
+
 <body>
-    <script src="app.js"></script>
+    <div class="container">
+
+        <div class="score">
+            <div class="player">
+                <p>Player - <span id="playerScore">00</span></p>
+                <div id="playerOutput">-</div>
+            </div>
+            <div id="vs">VS</div>
+            <div class="pc">
+                <p>Pc - <span id="pcScore">00</span></p>
+                <div id="pcOutput">-</div>
+
+            </div>
+        </div>
+        <div id="refresh">
+
+        </div>
+        <div id="text"></div>
+
+
+        <div class="selection">
+            <button class='button' id="rock">Rock</button>
+            <button class='button' id="paper">Paper</button>
+            <button class='button' id="scissors">Scissors</button>
+        </div>
+
+    </div>
 </body>
+
 </html>
